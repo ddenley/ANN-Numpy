@@ -1,0 +1,19 @@
+Code and Documentation Completed by Daniel Denley
+
+In order to test the project please run the main.py file
+
+It is recommended when trying out parameters to have epochs at 1000 to prove the model can learn, from here
+hyperparameter can be altered to attempt to lower learning time.
+
+At maximum for this dataset I found the depth of the network should be limited to two hidden layers or a plateau
+problem occurs which is only resolved after an excessive amount of epochs.
+
+
+Example inputs that work:
+Sigmoid - 1 hidden layer - 4 nodes in layer - lr: 0.001 - epochs: 1000 - default learning schedule - batch
+Sigmoid - 1 hidden layer - 8 nodes in layer - lr: 0.001 - epochs: 100 - default learning schedule - batch
+
+Softmax - 2 hidden layers - 4 nodes a layer - lr: 0.001 - epochs: 400 - default learning schedule - batch
+Softmax - 2 hidden layers - 4 nodes a layer - lr 0.002 - decay - 0.00001 - epochs 150 - batch
+
+The testing_plotting.py file was simply used for plotting our graphs and performing hyperparameter search
